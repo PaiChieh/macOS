@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.AVKitIBPlugin" version="14490.70"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -12,11 +10,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Dibbler" id="1Xt-HY-uBw">
+                            <menuItem title="CoreDataApp" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Dibbler" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="CoreDataApp" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Dibbler" id="5kV-Vb-QxS">
+                                        <menuItem title="About CoreDataApp" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -30,7 +28,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide Dibbler" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide CoreDataApp" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -48,7 +46,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit Dibbler" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit CoreDataApp" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -661,7 +659,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Dibbler Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="CoreDataApp Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -675,7 +673,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Dibbler" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -705,56 +703,11 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Dibbler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rqb-zE-MKj">
-                                <rect key="frame" x="20" y="228" width="96" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="bgi-SL-aS3"/>
-                                </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="xYw-DK-Nce">
-                                    <font key="font" usesAppearanceFont="YES"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <action selector="didTextEdit:" target="XfG-lQ-9wD" id="Xdb-v1-IEt"/>
-                                </connections>
-                            </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vfc-BX-LhP">
-                                <rect key="frame" x="124" y="228" width="41" height="23"/>
-                                <buttonCell key="cell" type="roundTextured" title="送出" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zVK-S2-c39">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangTC-Regular"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="searchAction:" target="XfG-lQ-9wD" id="H3w-Jn-uXB"/>
-                                </connections>
-                            </button>
-                            <avPlayerView controlsStyle="inline" translatesAutoresizingMaskIntoConstraints="NO" id="i3S-yb-k8O">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="213"/>
-                            </avPlayerView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="rqb-zE-MKj" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="Fyc-ai-VBd"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vfc-BX-LhP" secondAttribute="trailing" constant="315" id="Gld-OE-qoZ"/>
-                            <constraint firstItem="vfc-BX-LhP" firstAttribute="leading" secondItem="rqb-zE-MKj" secondAttribute="trailing" constant="8" symbolic="YES" id="Glr-iz-kAF"/>
-                            <constraint firstAttribute="trailing" secondItem="i3S-yb-k8O" secondAttribute="trailing" id="SCa-Tv-YCf"/>
-                            <constraint firstItem="rqb-zE-MKj" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="g0u-y0-MWN"/>
-                            <constraint firstAttribute="trailing" secondItem="rqb-zE-MKj" secondAttribute="trailing" constant="364" id="hZS-jl-4HU"/>
-                            <constraint firstItem="rqb-zE-MKj" firstAttribute="baseline" secondItem="vfc-BX-LhP" secondAttribute="baseline" id="mmT-j2-chn"/>
-                            <constraint firstItem="i3S-yb-k8O" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="57" id="sQo-wX-OQq"/>
-                            <constraint firstItem="i3S-yb-k8O" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="ybu-JL-N2Z"/>
-                            <constraint firstAttribute="bottom" secondItem="i3S-yb-k8O" secondAttribute="bottom" id="zjT-EB-hAE"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="playerView" destination="i3S-yb-k8O" id="J2c-Wy-5fM"/>
-                        <outlet property="textField" destination="rqb-zE-MKj" id="3Cg-3j-ORb"/>
-                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

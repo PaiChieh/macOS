@@ -11,14 +11,6 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var apiKey = "AIzaSyAkyilvy068AG7LtIDYmO3NqxWFxea9u5s"
-    
-    var desiredChannelsArray = ["Apple", "Google", "Microsoft"]
-    
-    var channelIndex = 0
-    
-    var channelsDataArray: Array<Dictionary<NSObject, AnyObject>> = []
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }

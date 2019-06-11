@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185FD75F22A0D62000F0015F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185FD75E22A0D62000F0015F /* WebKit.framework */; };
 		1897CBFF2297B3C800C22EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897CBFE2297B3C800C22EC1 /* AppDelegate.swift */; };
 		1897CC012297B3C800C22EC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897CC002297B3C800C22EC1 /* ViewController.swift */; };
 		1897CC032297B3C900C22EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1897CC022297B3C900C22EC1 /* Assets.xcassets */; };
 		1897CC062297B3C900C22EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1897CC042297B3C900C22EC1 /* Main.storyboard */; };
+		1897CC0F229BA92C00C22EC1 /* ApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897CC0E229BA92C00C22EC1 /* ApiData.swift */; };
+		1897CC12229BD5D400C22EC1 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1897CC11229BD5D400C22EC1 /* AVKit.framework */; };
+		1897CC14229BD5DC00C22EC1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1897CC13229BD5DC00C22EC1 /* AVFoundation.framework */; };
+		1897CC18229BF6FE00C22EC1 /* YouTubeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897CC17229BF6FE00C22EC1 /* YouTubeFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185FD75E22A0D62000F0015F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1897CBFB2297B3C800C22EC1 /* Dibbler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dibbler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1897CBFE2297B3C800C22EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1897CC002297B3C800C22EC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +27,11 @@
 		1897CC052297B3C900C22EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1897CC072297B3C900C22EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1897CC082297B3C900C22EC1 /* Dibbler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dibbler.entitlements; sourceTree = "<group>"; };
+		1897CC0E229BA92C00C22EC1 /* ApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiData.swift; sourceTree = "<group>"; };
+		1897CC11229BD5D400C22EC1 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1897CC13229BD5DC00C22EC1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1897CC15229BE11C00C22EC1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1897CC17229BF6FE00C22EC1 /* YouTubeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeFormat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185FD75F22A0D62000F0015F /* WebKit.framework in Frameworks */,
+				1897CC14229BD5DC00C22EC1 /* AVFoundation.framework in Frameworks */,
+				1897CC12229BD5D400C22EC1 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +53,7 @@
 			children = (
 				1897CBFD2297B3C800C22EC1 /* Dibbler */,
 				1897CBFC2297B3C800C22EC1 /* Products */,
+				1897CC10229BD5D400C22EC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,12 +70,25 @@
 			children = (
 				1897CBFE2297B3C800C22EC1 /* AppDelegate.swift */,
 				1897CC002297B3C800C22EC1 /* ViewController.swift */,
+				1897CC0E229BA92C00C22EC1 /* ApiData.swift */,
+				1897CC17229BF6FE00C22EC1 /* YouTubeFormat.swift */,
 				1897CC022297B3C900C22EC1 /* Assets.xcassets */,
 				1897CC042297B3C900C22EC1 /* Main.storyboard */,
 				1897CC072297B3C900C22EC1 /* Info.plist */,
 				1897CC082297B3C900C22EC1 /* Dibbler.entitlements */,
 			);
 			path = Dibbler;
+			sourceTree = "<group>";
+		};
+		1897CC10229BD5D400C22EC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185FD75E22A0D62000F0015F /* WebKit.framework */,
+				1897CC15229BE11C00C22EC1 /* MediaPlayer.framework */,
+				1897CC13229BD5DC00C22EC1 /* AVFoundation.framework */,
+				1897CC11229BD5D400C22EC1 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1897CC012297B3C800C22EC1 /* ViewController.swift in Sources */,
+				1897CC18229BF6FE00C22EC1 /* YouTubeFormat.swift in Sources */,
 				1897CBFF2297B3C800C22EC1 /* AppDelegate.swift in Sources */,
+				1897CC0F229BA92C00C22EC1 /* ApiData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
